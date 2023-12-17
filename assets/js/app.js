@@ -29,3 +29,12 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

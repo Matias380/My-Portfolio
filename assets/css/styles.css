@@ -111,9 +111,16 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  width: 50%; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Esto mantiene la proporción original de la imagen */
+  border: 20px solid #fff; /* Ajusta el ancho y el color del borde */
+  border-radius: 1000px; /* Ajusta el radio para redondear las esquinas */
+  opacity: 0.8; /* Ajusta la opacidad (0.0 a 1.0) */
+  display: block; /* Asegura que sea un elemento de bloque */
+  margin: 500; /* Elimina márgenes */
+  padding: 500; /* Elimina relleno */
 }
+
 
 .bio {
   width: 25rem;
@@ -444,14 +451,7 @@ nav ul li {
 
   /* New Seccion Contact Ends */
 
-/* Footer section */
-footer {
-  background-color: var(--bg-color);
-  padding: 1.25rem;
-  text-align: center;
-  margin: 2rem 0 0;
-}
-/* Footer section ends */
+
 
 /* General (utilities) */
 .icon-card {
@@ -643,4 +643,37 @@ footer {
   height: 3rem;
 }
 /* Scroll to top button ends */
+
+/* Footer section */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+/* Footer section ends */
+
+/* Agrega estos estilos a tu hoja de estilos CSS */
+
+/* Message Top */
+
+/* Agrega estos estilos a tu hoja de estilos CSS (styles.css) */
+.scrolling-message {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: slideText 5s linear infinite;
+  width: max-content;
+}
+
+@keyframes slideText {
+  60% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
